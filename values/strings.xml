@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">konvert suhu</string>
+    <string-array name="temp">
+        <item>Celcius</item>
+        <item>Kelvin</item>
+        <item>Fahrenheit</item>
+        <item>Reamur</item>
+    </string-array>
+</resources>

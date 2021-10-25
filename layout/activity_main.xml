@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_convert_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERT TEMP"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/btn_opo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tombol sijine"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+</LinearLayout>

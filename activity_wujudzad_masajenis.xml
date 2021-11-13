@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="256dp"
-        android:src="@drawable/cahaya" />
+        android:src="@drawable/wujud" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,8 +19,7 @@
         android:layout_gravity="center"
         android:background="#093B51"
         android:padding="20dp"
-        android:textAlignment="center"
-        android:text="Cahaya, Cermin, dan Lensa"
+        android:text="Wujud Zad dan Masa Jenis"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
@@ -30,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAlignment="center"
-        android:text="Berikut ini adalah pengertian cahaya, cermin, dan lensa"
+        android:text="Berikut ini adalah pengertian dari wujud zat dan masa jenis"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16dp" />
 
@@ -42,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
-            android:text="@string/text6"
+            android:text="@string/text2"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="20dp" />
 

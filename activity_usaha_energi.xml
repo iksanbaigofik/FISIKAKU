@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAlignment="center"
-        android:text="Berikut ini adalah pengertian usaha dan energi"
+        android:text="Berikut ini adalah pengetian usaha dan energi"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16dp" />
 

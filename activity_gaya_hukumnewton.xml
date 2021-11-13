@@ -10,7 +10,8 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="256dp"/>
+        android:layout_height="256dp"
+        android:src="@drawable/gaya" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +19,7 @@
         android:layout_gravity="center"
         android:background="#093B51"
         android:padding="20dp"
-        android:text="Gaya dan Hukun Newton"
+        android:text="Gaya dan Hukum Newton"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
@@ -27,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Berikut ini pengertian Gaya dan Hukum Newton"
+        android:text="Berikut adalah Pengertian gaya dan hukum newton"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16dp" />
 

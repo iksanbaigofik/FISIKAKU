@@ -18,8 +18,8 @@ public class MateriFisika extends AppCompatActivity {
         setContentView(R.layout.activity_materi_fisika);
 
         listView = (ListView) findViewById(R.id.list);
-        String[] values = new String[]{"Suhu dan Calor", "Wujud Zat dan Masa Jenis",
-                "Gaya dan Hukum Newtom", "Usaha dan Energi","Getaran, Gelombang, dan Bunyi",
+        String[] values = new String[]{"Suhu dan Calor", "Wujud Zad dan Masa Jenis",
+                "Gaya dan Hukum Newton", "Usaha dan Energi","Getaran, Gelombang, dan Bunyi",
                 "Cahaya, Cermin, dan Lensa","Listrik Statis dan Dinamis","Kemagnetan", "Tata Surya"
 
         };
@@ -38,7 +38,7 @@ public class MateriFisika extends AppCompatActivity {
                 }
 
                 if (position == 1) {
-                    Intent myIntent = new Intent(view.getContext(), WujudzatMasajenis.class);
+                    Intent myIntent = new Intent(view.getContext(), WujudzadMasajenis.class);
                     startActivityForResult(myIntent, 0);
                 }
                 if (position == 2) {
@@ -55,10 +55,6 @@ public class MateriFisika extends AppCompatActivity {
                 }
                 if (position == 5) {
                     Intent myIntent = new Intent(view.getContext(), CahayaCerminLensa.class);
-                    startActivityForResult(myIntent, 0);
-                }
-                if (position == 6) {
-                    Intent myIntent = new Intent(view.getContext(), Listrik.class);
                     startActivityForResult(myIntent, 0);
                 }
 

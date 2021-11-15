@@ -57,7 +57,18 @@ public class MateriFisika extends AppCompatActivity {
                     Intent myIntent = new Intent(view.getContext(), CahayaCerminLensa.class);
                     startActivityForResult(myIntent, 0);
                 }
-
+                if (position == 6) {
+                    Intent myIntent = new Intent(view.getContext(), ListrikStatisdanDinamis.class);
+                    startActivityForResult(myIntent, 0);
+                }
+                if (position == 7) {
+                    Intent myIntent = new Intent(view.getContext(), Kemagnetan.class);
+                    startActivityForResult(myIntent, 0);
+                }
+                if (position == 8) {
+                    Intent myIntent = new Intent(view.getContext(), TataSurya.class);
+                    startActivityForResult(myIntent, 0);
+                }
 
             }
         });

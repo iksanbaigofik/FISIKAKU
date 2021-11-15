@@ -7,40 +7,69 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
+import android.widget.TextView;
 
-public class ConvertSuhu extends AppCompatActivity {
-    ListView listView;
+public class ConvertSuhu extends AppCompatActivity  {
+    TextView hasil;
+    EditText suhu;
+    Spinner spinner;
+    Button btn_konversi;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_convert_suhu);
 
-        listView = (ListView) findViewById(R.id.list);
-        String[] values = new String[]{"Kebun Binatang Sang Kulim","Perpustakaan Soeman H.S","Taman Agrowisata Tenayan Raya","ASIA FARM HAYDAY", "Taman Budaya Provinsi Riau","Rumah Jamur Nando","Rumah Singgah Tuan Kadi","Museum Daerah Riau Sang Nila Utama","Agrowisata SCW Tenayan Raya","Lapangan Purna MTQ Pekanbaru","Taman Pendidikan Al - Quran (TPA/TPQ) Baitul Arsy"
+        suhu = (EditText) findViewById(R.id.et_suhu);
+        spinner = findViewById(R.id.spinner_temp);
+        hasil = findViewById(R.id.tv_hasil);
+        btn_konversi = (Button) findViewById(R.id.btn_konvert);
+    }
 
-        };
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, values);
-
-        listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                if (position == 0) {
-                    Intent myIntent = new Intent(view.getContext(), KebunBinatang.class);
-                    startActivityForResult(myIntent, 0);
-                }
-
-                if (position == 1) {
-                    Intent myIntent = new Intent(view.getContext(), Pustaka.class);
-                    startActivityForResult(myIntent, 0);
-                }
-
-
+    public void konversisuhu (View view){
+        try{
+            if (suhu.getText().toString().equals("")){
+                hasil.setText("ERROR");
+                return;
             }
-        });
+            float tempValue = Float.parseFloat(suhu.getText().toString());
+            int item = spinner.getSelectedItemPosition();
+            switch (item) {
+                case 0:
+                    hasil.setText("Kelvin : " + (tempValue + 273.15) + "\n" +
+                            "Fahrenheit : " + (tempValue * 9 / 5 + 32) + "\n" +
+                            "Reamur : " + (tempValue * 4 / 5));
+                    break;
+                case 1:
+                    hasil.setText("Celcius : " + (tempValue - 273.15) + "\n" +
+                            "Fahrenheit : " + ((tempValue - 273.15) * 9 / 5 + 32) + "\n" +
+                            "Reamur : " + ((tempValue - 273.15) * 4 / 5));
+                    break;
+                case 2:
+                    hasil.setText("Celcius : " + ((tempValue - 32) * 5 / 9) + "\n" +
+                            "Kelvin : " + ((tempValue - 32) * 5 / 9 + 273.15) + "\n" +
+                            "Reamur : " + ((tempValue - 32) * 4 / 9));
+                    break;
+                case 3:
+                    hasil.setText("Celcius : " + (tempValue * 5 / 4) + "\n" +
+                            "Kelvin : " + ((tempValue + 273.15) * 5 / 4) + "\n" +
+                            "Fahrenheit : " + ((tempValue + 32) * 9 / 4));
+                    break;
+                default:
+                    hasil.setText("ERROR");
+                    break;
+            }
+        }catch (Exception e){
+            hasil.setText("BUKAN ANGKA");
+            e.printStackTrace();
+        }
+    }
+
+    public void keluar (View view) {
+        finish();
     }
 }

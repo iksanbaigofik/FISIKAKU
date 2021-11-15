@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="256dp"
-        android:src="@drawable/wujud" />
+        android:src="@drawable/tatasurya" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +19,8 @@
         android:layout_gravity="center"
         android:background="#093B51"
         android:padding="20dp"
-        android:text="Wujud Zad dan Masa Jenis"
+        android:textAlignment="center"
+        android:text="Tata Surya"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
@@ -29,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAlignment="center"
-        android:text="Berikut ini adalah pengertian dari wujud zat dan masa jenis"
+        android:text="Berikut ini adalah pengertian dari tata surya dan urutan planetnya"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16dp" />
 
@@ -41,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
-            android:text="@string/text2"
+            android:text="@string/text9"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="20dp" />
 
